@@ -1,0 +1,47 @@
+[shop]
+# ── Google Sheets ────────────────────────────────────────────────────────────
+# ID of the spreadsheet used for the main Google Merchant product feed
+spreadsheet_feed_id = YOUR_FEED_SPREADSHEET_ID
+
+# ID of the spreadsheet used for the local inventory feed
+spreadsheet_local_inventory_id = YOUR_LOCAL_INVENTORY_SPREADSHEET_ID
+
+# Google Merchant store code (found in your Google Business Profile)
+store_code = YOUR_STORE_CODE
+
+# Name of the tab inside each spreadsheet (usually Sheet1)
+feed_sheet_name = Sheet1
+local_inventory_sheet_name = Sheet1
+
+# Path to your Google service account JSON key file
+service_account_file = ./spreadsheet-service-account-key.json
+
+# ── PrestaShop Shop ──────────────────────────────────────────────────────────
+# Public base URL of your shop (no trailing slash)
+shop_base_url = https://yourshop.com
+
+# Short prefix added to every product ID to avoid collisions across feeds
+id_prefix = ks_
+
+# VAT rate (0.23 = 23%)
+tax = 0.23
+
+# Number of rows to upload to Google Sheets in a single API call
+batch_size = 100
+
+# ── MySQL Database ───────────────────────────────────────────────────────────
+db_host = YOUR_DB_HOST
+db_name = YOUR_DB_NAME
+db_user = YOUR_DB_USER
+db_pass = YOUR_DB_PASSWORD
+
+# ── Email Notifications ──────────────────────────────────────────────────────
+# Recipient of sync success/failure emails
+receiver_email = you@example.com
+
+# Gmail account used to send notifications
+sender_email = your-gmail@gmail.com
+
+# Gmail App Password (not your regular password — generate one at
+# https://myaccount.google.com/apppasswords)
+sender_password = YOUR_GMAIL_APP_PASSWORD

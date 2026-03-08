@@ -1,0 +1,4 @@
+mysql-connector-python
+google-auth
+google-api-python-client
+beautifulsoup4
