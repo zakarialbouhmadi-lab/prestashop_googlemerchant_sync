@@ -1,6 +1,6 @@
 # prestashop-google-merchant-sync
-
-A Python script that exports active product variants from a **PrestaShop** database directly into **Google Sheets**, in the format expected by **Google Merchant Center** (main product feed + local inventory feed).
+ 
+A Python script that exports active product variants from a **PrestaShop** 8.x.x database directly into **Google Sheets**, in the format expected by **Google Merchant Center** (main product feed + local inventory feed).
 
 It is designed to run on a schedule (e.g. via cron) and sends an email notification on success or failure.
 
