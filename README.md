@@ -1,5 +1,6 @@
 # prestashop-google-merchant-sync
- 
+![PrestaShop](https://img.shields.io/badge/PrestaShop-8.1.7%20%7C%208.2-blue) ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
+
 A Python script that exports active product variants from a **PrestaShop** 8.x.x database directly into **Google Sheets**, in the format expected by **Google Merchant Center** (main product feed + local inventory feed).
 
 It is designed to run on a schedule (e.g. via cron) and sends an email notification on success or failure.
@@ -162,6 +163,16 @@ The script parses structured Polish descriptions written in a common PrestaShop 
 - **Material** — fabric composition
 
 ---
+
+## Compatibility
+
+| Software | Version |
+|----------|---------|
+| PrestaShop | 8.1.7, 8.2 |
+| Python | 3.8+ |
+| MySQL | 5.7+ |
+
+Tested on a live production store. The SQL queries use standard PrestaShop table names (`ps_` prefix) and should work on any PS 8.x installation.
 
 ## Requirements
 
